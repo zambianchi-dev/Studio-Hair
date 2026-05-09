@@ -19,10 +19,10 @@
       <a href="index.html" class="nav-logo"><img src="./assets/svg/logo.svg" alt=""></a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#procedimentos">Procedimentos</a></li>
-          <li><a href="#domicilio">Atendimento a Domicilio</a></li>
-          <li><a href="#local">Local</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#procedimentos">Procedimentos</a></li>
+          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#domicilio">Atendimento a Domicilio</a></li>
+          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#local">Local</a></li>
+          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#depoimentos">Depoimentos</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
         </ul>
       </nav>
@@ -60,14 +60,15 @@
     <div class="catalog-header" id="CatalogoHeader">
       <div class="container catalog-header__container">
         <h1>Catálogo de Serviços</h1>
-        <nav class="category-pills row gap-24" aria-label="Categorias">
-          <a href="#Cabelo" class="pill">Cabelo</a>
-          <a href="#ManicurePedicure" class="pill">Manicure e Pedicure</a>
-          <a href="#EmbelezamentoFacial" class="pill">Embelezamento Facial</a>
-          <a href="#EsteticaFacialFuncional" class="pill">Estética Facial</a>
+        <nav class="catalog__tabs category-pills">
+          <button data-tab="Cabelo" class="pill" onclick="showTab('Cabelo')">Cabelo</button>
+          <button data-tab="ManicurePedicure" class="pill" onclick="showTab('ManicurePedicure')">Manicure e Pedicure</button>
+          <button data-tab="EmbelezamentoFacial" class="pill" onclick="showTab('EmbelezamentoFacial')">Embelezamento Facial</button>
+          <button data-tab="EsteticaFacialFuncional" class="pill" onclick="showTab('EsteticaFacialFuncional')">Estética Facial Funcional</button>
         </nav>
       </div>
     </div>
+
 
 
     <section id="manicure" class="catalog-section">
