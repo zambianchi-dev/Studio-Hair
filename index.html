@@ -4,8 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Hair — Salão de Beleza</title>
-  <meta name="description" content="Studio Hair — manicure, progressiva, sobrancelha e muito mais. Atendimento no salão e a domicílio. Preços transparentes, profissionais de confiança.">
+  <title>Studio Hair — Salão de Beleza em Maringá</title>
+
+  <!-- Meta description corrigida (removido "sobrancelha" duplicado) -->
+  <meta name="description" content="Salão de beleza em Maringá. Manicure, progressiva, sobrancelha e pele. Atendimento no salão e a domicílio. Preços transparentes, profissionais de confiança.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://zambianchi-dev.github.io/Studio-Hair/index.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Studio Hair — Salão de Beleza em Maringá">
+  <meta property="og:description" content="Manicure, progressiva, sobrancelha e pele. Atendimento no salão e a domicílio em Maringá.">
+  <meta property="og:image" content="https://zambianchi-dev.github.io/Studio-Hair/assets/img/hero-woman.jpg">
+  <meta property="og:url" content="https://zambianchi-dev.github.io/Studio-Hair/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Studio Hair",
+    "description": "Salão de beleza em Maringá. Manicure, progressiva, sobrancelha e pele. Atendimento no salão e a domicílio.",
+    "url": "https://zambianchi-dev.github.io/Studio-Hair/",
+    "telephone": "+55[NUMERO_WHATSAPP]",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Maringá",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/valdineiagoncalves777/"
+    ],
+    "priceRange": "R$35 – R$300"
+  }
+  </script>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,11 +53,11 @@
   <!-- ===================== HEADER ===================== -->
   <header>
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="./assets/svg/logo.svg" alt=""></a>
-      <nav>
+      <a href="index.html" class="nav-logo"><img src="./assets/svg/logo.svg" alt="Studio Hair — Salão de Beleza"></a>
+      <nav aria-label="Menu principal">
         <ul class="nav-links">
           <li><a href="#procedimentos">Procedimentos</a></li>
-          <li><a href="#domicilio">Atendimento a Domicilio</a></li>
+          <li><a href="#domicilio">Atendimento a Domicílio</a></li>
           <li><a href="#local">Local</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
@@ -27,30 +66,33 @@
       <a href="https://wa.me/[NUMERO_WHATSAPP]" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
         Agendar via WhatsApp
       </a>
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Abrir menu" role="button" aria-expanded="false">
         <span class="line-1"></span>
         <span class="line-2"></span>
       </div>
     </div>
   </header>
 
-  <div class="mobile-overlay" id="mobileMenu">
+  <div class="mobile-overlay" id="mobileMenu" aria-hidden="true">
     <div class="mobile-overlay__content">
       <h4>Menu</h4>
-      <nav class="mobile-overlay__nav">
+      <nav class="mobile-overlay__nav" aria-label="Menu mobile">
         <ul class="mobile-overlay__list">
           <li class="mobile-overlay__itens">
             <a class="mobile-overlay__link" href="#procedimentos">Procedimentos</a>
           </li>
-          <li class="mobile-overlay__itens"><a href="#domicilio">Atendimento a Domicilio</a></li>
+          <li class="mobile-overlay__itens"><a href="#domicilio">Atendimento a Domicílio</a></li>
           <li class="mobile-overlay__itens"><a href="#local">Local</a></li>
           <li class="mobile-overlay__itens"><a href="#depoimentos">Depoimentos</a></li>
-          <li class="mobile-overlay__itens"><a href="./catalogo.html">Catalogo</a></li>
+          <li class="mobile-overlay__itens"><a href="catalogo.html">Catálogo</a></li>
         </ul>
       </nav>
-      <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon"><img src="./assets/svg/InstagramLogo.svg" alt=""></a>
+      <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram do Studio Hair">
+        <img src="./assets/svg/InstagramLogo.svg" alt="Instagram">
+      </a>
     </div>
   </div>
+
   <main>
 
     <!-- ===================== HERO ===================== -->
@@ -60,7 +102,8 @@
           <p class="section-label"></p>
           <h1>Cuide de você com quem entende de beleza.</h1>
           <p class="hero-sub">
-            Salão de beleza em Maringá. Manicure, progressiva, sobrancelha e pele, Atendemos no salão e a domicilio.
+            Salão de beleza em Maringá. Manicure, progressiva, sobrancelha e pele. Atendemos no salão e a domicílio.
+          </p>
           <div class="hero-actions">
             <a href="https://wa.me/[NUMERO_WHATSAPP]" class="btn btn-primary" target="_blank" rel="noopener">
               Agendar agora
@@ -71,13 +114,13 @@
           </div>
         </div>
         <div class="img-hero">
-          <img src="./assets/img/hero-woman.jpg" alt="">
+          <img src="./assets/img/hero-woman.jpg" alt="Mulher com cabelo liso e bem cuidado — Studio Hair Maringá">
         </div>
       </div>
     </section>
 
     <!-- ===================== SERVIÇOS ===================== -->
-    <section id="procedimentos" class="section-services" aria-label="Nossos serviços">
+    <section id="procedimentos" class="section-services">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Nossos Procedimentos</p>
@@ -86,26 +129,25 @@
         <div class="services-grid">
 
           <div class="service-card">
-            <div><img src="./assets/img/cabelo.webp" alt=""></div>
+            <div><img src="./assets/img/cabelo.webp" alt="Procedimento de cabelo — progressiva e hidratação no Studio Hair"></div>
             <div class="service-card__text">
               <h3>Cabelo</h3>
-
               <p>Cortes, hidratações e progressivas. Cabelo liso, saudável e sem frizz.</p>
               <a class="btn btn-outline" href="catalogo.html#Cabelo">Ver preços</a>
             </div>
           </div>
 
           <div class="service-card">
-            <div><img src="./assets/img/manicure.webp" alt=""></div>
+            <div><img src="./assets/img/manicure.webp" alt="Manicure e pedicure — esmaltação em gel e alongamento no Studio Hair"></div>
             <div class="service-card__text">
               <h3>Manicure e Pedicure</h3>
               <p>Do tradicional ao alongamento. Mãos e pés cuidados do jeito que você prefere.</p>
-              <a class="btn btn-outline" href="catalogo.html#ManicurePedicure">Ver preços </a>
+              <a class="btn btn-outline" href="catalogo.html#ManicurePedicure">Ver preços</a>
             </div>
           </div>
 
           <div class="service-card">
-            <div><img src="./assets/img/embelezamento.webp" alt=""></div>
+            <div><img src="./assets/img/embelezamento.webp" alt="Embelezamento facial — design de sobrancelha e lash lifting no Studio Hair"></div>
             <div class="service-card__text">
               <h3>Embelezamento Facial</h3>
               <p>Sobrancelha, buço e lash lifting. O detalhe que muda o rosto inteiro.</p>
@@ -114,7 +156,7 @@
           </div>
 
           <div class="service-card">
-            <div><img src="./assets/img/estetica.webp" alt=""></div>
+            <div><img src="./assets/img/estetica.webp" alt="Estética facial — limpeza de pele profissional no Studio Hair Maringá"></div>
             <div class="service-card__text">
               <h3>Estética Facial</h3>
               <p>Limpeza de pele profissional para uma pele mais limpa, uniforme e saudável.</p>
@@ -152,7 +194,7 @@
       </div>
     </section>
 
-    <!-- ===================== SOBRE ===================== -->
+    <!-- ===================== LOCAL ===================== -->
     <section id="local" class="section-sobre">
       <div class="container">
         <div class="sobre-inner">
@@ -175,17 +217,14 @@
               <h3>Ambiente climatizado</h3>
               <p>Conforto para você relaxar durante o atendimento.</p>
             </div>
-
             <div>
               <h3>Atendimento com hora marcada</h3>
               <p>Mais organização e tranquilidade para você.</p>
             </div>
-
             <div>
               <h3>Cuidado individual</h3>
               <p>Cada cliente é atendida com atenção e dedicação.</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -234,22 +273,24 @@
   <footer>
     <div class="container footer-container">
       <div class="footer-content">
-        <a href=""><img src="./assets/svg/logo-escrita.svg" alt="" class="logo-footer"></a>
-        <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon"><img src="./assets/svg/InstagramLogo.svg" alt=""></a>
+        <a href="index.html"><img src="./assets/svg/logo-escrita.svg" alt="Studio Hair" class="logo-footer"></a>
+        <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram do Studio Hair">
+          <img src="./assets/svg/InstagramLogo.svg" alt="Instagram">
+        </a>
       </div>
       <div class="footer-content">
-        <nav>
+        <nav aria-label="Links do rodapé">
           <ul class="nav-links-footer">
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#procedimentos">Serviços</a></li>
+            <li><a href="#local">Sobre</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
           </ul>
         </nav>
-        <a href=""><img src="./assets/svg/logo-escrita.svg" alt="" class="logo-footer-mobile"></a>
+        <a href="index.html"><img src="./assets/svg/logo-escrita.svg" alt="Studio Hair" class="logo-footer-mobile"></a>
         <div class="politica-footer">
-          <a href="">Todos os direitos reservados © 2026 Studio hair</a>
-          <a href="">Desenvolvido por Allux</a>
+          <span>Todos os direitos reservados © 2026 Studio Hair</span>
+          <span>Desenvolvido por Allux</span>
         </div>
       </div>
     </div>

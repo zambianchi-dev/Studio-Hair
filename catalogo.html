@@ -4,8 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Serviços — Studio Hair</title>
-  <meta name="description" content="Veja todos os serviços e preços do Studio Hair — manicure, pedicure, progressiva, embelezamento facial e estética. Atendimento no salão e a domicílio.">
+  <title>Catálogo de Serviços — Studio Hair Maringá</title>
+  <meta name="description" content="Veja todos os serviços e preços do Studio Hair — manicure, pedicure, progressiva, embelezamento facial e estética. Atendimento no salão e a domicílio em Maringá.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://zambianchi-dev.github.io/Studio-Hair/catalogo.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Catálogo de Serviços — Studio Hair Maringá">
+  <meta property="og:description" content="Veja todos os serviços e preços do Studio Hair — manicure, pedicure, progressiva, embelezamento facial e estética. Atendimento no salão e a domicílio em Maringá.">
+  <meta property="og:image" content="https://zambianchi-dev.github.io/Studio-Hair/assets/img/hero-woman.jpg">
+  <meta property="og:url" content="https://zambianchi-dev.github.io/Studio-Hair/catalogo.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
   <!-- CSS do Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,84 +31,81 @@
   <!-- ===================== HEADER ===================== -->
   <header>
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="./assets/svg/logo.svg" alt=""></a>
-      <nav>
+      <a href="index.html" class="nav-logo"><img src="./assets/svg/logo.svg" alt="Studio Hair — Salão de Beleza"></a>
+      <nav aria-label="Menu principal">
         <ul class="nav-links">
-          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#procedimentos">Procedimentos</a></li>
-          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#domicilio">Atendimento a Domicilio</a></li>
-          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#local">Local</a></li>
-          <li><a href="https://zambianchi-dev.github.io/Studio-Hair/#depoimentos">Depoimentos</a></li>
+          <li><a href="index.html#procedimentos">Procedimentos</a></li>
+          <li><a href="index.html#domicilio">Atendimento a Domicílio</a></li>
+          <li><a href="index.html#local">Local</a></li>
+          <li><a href="index.html#depoimentos">Depoimentos</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
         </ul>
       </nav>
       <a href="https://wa.me/[NUMERO_WHATSAPP]" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
         Agendar via WhatsApp
       </a>
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Abrir menu" role="button" aria-expanded="false">
         <span class="line-1"></span>
         <span class="line-2"></span>
       </div>
     </div>
   </header>
 
-  <div class="mobile-overlay" id="mobileMenu">
+  <div class="mobile-overlay" id="mobileMenu" aria-hidden="true">
     <div class="mobile-overlay__content">
       <h4>Menu</h4>
-      <nav class="mobile-overlay__nav">
+      <nav class="mobile-overlay__nav" aria-label="Menu mobile">
         <ul class="mobile-overlay__list">
           <li class="mobile-overlay__itens">
-            <a class="mobile-overlay__link" href="#procedimentos">Procedimentos</a>
+            <a class="mobile-overlay__link" href="index.html#procedimentos">Procedimentos</a>
           </li>
-          <li><a href="#domicilio">Atendimento a Domicilio</a></li>
-          <li class="mobile-overlay__itens"><a href="">Local</a></li>
-          <li class="mobile-overlay__itens"><a href="">Depoimentos</a></li>
-          <li class="mobile-overlay__itens"><a href="">Catalogo</a></li>
+          <li class="mobile-overlay__itens"><a href="index.html#domicilio">Atendimento a Domicílio</a></li>
+          <li class="mobile-overlay__itens"><a href="index.html#local">Local</a></li>
+          <li class="mobile-overlay__itens"><a href="index.html#depoimentos">Depoimentos</a></li>
+          <li class="mobile-overlay__itens"><a href="catalogo.html">Catálogo</a></li>
         </ul>
       </nav>
-      <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon"><img src="./assets/svg/InstagramLogo.svg" alt=""></a>
+      <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram do Studio Hair">
+        <img src="./assets/svg/InstagramLogo.svg" alt="Instagram">
+      </a>
     </div>
   </div>
 
   <main>
 
     <!-- ===================== CATALOG HEADER ===================== -->
-    <div class="catalog-header" id="CatalogoHeader">
+    <section class="catalog-header" id="CatalogoHeader">
       <div class="container catalog-header__container">
         <h1>Catálogo de Serviços</h1>
-        <nav class="catalog__tabs category-pills">
+        <nav class="catalog__tabs category-pills" aria-label="Categorias de serviços">
           <button data-tab="Cabelo" class="pill" onclick="showTab('Cabelo')">Cabelo</button>
           <button data-tab="ManicurePedicure" class="pill" onclick="showTab('ManicurePedicure')">Manicure e Pedicure</button>
           <button data-tab="EmbelezamentoFacial" class="pill" onclick="showTab('EmbelezamentoFacial')">Embelezamento Facial</button>
           <button data-tab="EsteticaFacialFuncional" class="pill" onclick="showTab('EsteticaFacialFuncional')">Estética Facial Funcional</button>
         </nav>
       </div>
-    </div>
+    </section>
 
+    <section id="catalogo" class="catalog-section">
 
-
-    <section id="manicure" class="catalog-section">
       <!-- ===================== CABELO ===================== -->
       <div class="container catalog__container" id="Cabelo">
-        <!-- CARD PROCEDIMENTOS -->
+
+        <!-- CARD: Progressiva Orgânica -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide antes"><img src="./assets/img/cabelos/liso-curto-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/liso-curto-depois.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-liso-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-liso-depois.webp" alt=""></div>
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/liso-curto-antes.webp" alt="Cabelo curto antes da progressiva orgânica"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/liso-curto-depois.webp" alt="Cabelo curto depois da progressiva orgânica no Studio Hair"></div>
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/loiro-liso-antes.webp" alt="Cabelo loiro antes da progressiva orgânica"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-liso-depois.webp" alt="Cabelo loiro liso depois da progressiva orgânica"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
-            <h3>Progressiva organica</h3>
+            <h3>Progressiva Orgânica</h3>
             <div class="price-table">
               <table>
                 <thead>
@@ -104,53 +116,32 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Curto</td>
-                    <td>R$160,00</td>
-                    <td>R$180,00</td>
-                  </tr>
-                  <tr>
-                    <td>Médio</td>
-                    <td>R$180,00</td>
-                    <td>R$200,00</td>
-                  </tr>
-                  <tr>
-                    <td>Grande</td>
-                    <td>R$230,00</td>
-                    <td>R$260,00</td>
-                  </tr>
-                  <tr>
-                    <td>Extra G</td>
-                    <td>R$250,00</td>
-                    <td>R$300,00</td>
-                  </tr>
+                  <tr><td>Curto</td><td>R$160,00</td><td>R$180,00</td></tr>
+                  <tr><td>Médio</td><td>R$180,00</td><td>R$200,00</td></tr>
+                  <tr><td>Grande</td><td>R$230,00</td><td>R$260,00</td></tr>
+                  <tr><td>Extra G</td><td>R$250,00</td><td>R$300,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Progressiva Com Formol -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide antes"><img src="./assets/img/cabelos/enrolado-vermelho-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/enrolado-vermelho-depois.webp" alt=""></div>
-              <div class="swiper-slide antes"><img src="./assets/img/cabelos/liso-ondulado-loiro-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/liso-loiro-ondulado-depois.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-ondulado-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-ondulado-depois.webp" alt=""></div>
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/enrolado-vermelho-antes.webp" alt="Cabelo enrolado vermelho antes da progressiva com formol"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/enrolado-vermelho-depois.webp" alt="Cabelo vermelho liso depois da progressiva com formol"></div>
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/liso-ondulado-loiro-antes.webp" alt="Cabelo loiro ondulado antes da progressiva"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/liso-loiro-ondulado-depois.webp" alt="Cabelo loiro liso depois da progressiva com formol"></div>
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/loiro-ondulado-antes.webp" alt="Cabelo loiro ondulado antes do alisamento"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/loiro-ondulado-depois.webp" alt="Cabelo loiro liso depois do alisamento no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Progressiva Com Formol</h3>
             <div class="price-table">
@@ -163,50 +154,28 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Curto</td>
-                    <td>R$130,00</td>
-                    <td>R$160,00</td>
-                  </tr>
-                  <tr>
-                    <td>Médio</td>
-                    <td>R$160,00</td>
-                    <td>R$185,00</td>
-                  </tr>
-                  <tr>
-                    <td>Grande</td>
-                    <td>R$200,00</td>
-                    <td>R$230,00</td>
-                  </tr>
-                  <tr>
-                    <td>Extra G</td>
-                    <td>R$280,00</td>
-                    <td>R$280,00</td>
-                  </tr>
+                  <tr><td>Curto</td><td>R$130,00</td><td>R$160,00</td></tr>
+                  <tr><td>Médio</td><td>R$160,00</td><td>R$185,00</td></tr>
+                  <tr><td>Grande</td><td>R$200,00</td><td>R$230,00</td></tr>
+                  <tr><td>Extra G</td><td>R$280,00</td><td>R$280,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Mechas -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide antes"><img src="./assets/img/cabelos/cacheado-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/cabelos/cacheado-depois.webp" alt=""></div>
-
+              <div class="swiper-slide antes"><img src="./assets/img/cabelos/cacheado-antes.webp" alt="Cabelo cacheado antes das mechas"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/cabelos/cacheado-depois.webp" alt="Cabelo cacheado com mechas depois do procedimento no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Mechas</h3>
             <div class="price-table">
@@ -224,32 +193,28 @@
                     <td>R$300,00</td>
                     <td>R$300,00</td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
+
       </div>
 
       <!-- ===================== MANICURE & PEDICURE ===================== -->
       <div class="container catalog__container" id="ManicurePedicure">
-        <!-- CARD PROCEDIMENTOS -->
+
+        <!-- CARD: Tradicional -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide "><img src="./assets/img/unhas/rosa-claro.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/unhas/rosa-claro.webp" alt="Esmaltação tradicional rosa claro — manicure no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Tradicional</h3>
             <div class="price-table">
@@ -262,45 +227,26 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Mão</td>
-                    <td>R$35,00</td>
-                    <td>R$40,00</td>
-                  </tr>
-                  <tr>
-                    <td>Pé</td>
-                    <td>R$40,00</td>
-                    <td>R$50,00</td>
-                  </tr>
-                  <tr>
-                    <td>Pé e Mão</td>
-                    <td>R$60,00</td>
-                    <td>R$80,00</td>
-                  </tr>
-                  <tr>
-                  </tr>
+                  <tr><td>Mão</td><td>R$35,00</td><td>R$40,00</td></tr>
+                  <tr><td>Pé</td><td>R$40,00</td><td>R$50,00</td></tr>
+                  <tr><td>Pé e Mão</td><td>R$60,00</td><td>R$80,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Esmaltação em Gel -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide "><img src="./assets/img/unhas/azul-escuro.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/unhas/azul-escuro.webp" alt="Esmaltação em gel azul escuro — manicure no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Esmaltação Em Gel</h3>
             <div class="price-table">
@@ -313,43 +259,26 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Mão</td>
-                    <td>R$60,00</td>
-                    <td>R$75,00</td>
-                  </tr>
-                  <tr>
-                    <td>Pé</td>
-                    <td>R$65,00</td>
-                    <td>R$80,00</td>
-                  </tr>
-                  <tr>
-                    <td>Pé e Mão</td>
-                    <td>R$120,00</td>
-                    <td>R$150,00</td>
-                  </tr>
+                  <tr><td>Mão</td><td>R$60,00</td><td>R$75,00</td></tr>
+                  <tr><td>Pé</td><td>R$65,00</td><td>R$80,00</td></tr>
+                  <tr><td>Pé e Mão</td><td>R$120,00</td><td>R$150,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Alongamento -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide "><img src="./assets/img/unhas//francesinha-vermelha.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/unhas/francesinha-vermelha.webp" alt="Alongamento de unhas francesinha vermelha — Studio Hair Maringá"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Alongamento</h3>
             <div class="price-table">
@@ -362,33 +291,24 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>F1</td>
-                    <td>R$150,00</td>
-                    <td>R$170,00</td>
-                  </tr>
+                  <tr><td>F1</td><td>R$150,00</td><td>R$170,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Manutenção -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide "><img src="./assets/img/unhas/vermelho.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/unhas/vermelho.webp" alt="Manutenção de unhas em gel vermelho — Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Manutenção</h3>
             <div class="price-table">
@@ -401,45 +321,33 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Mão</td>
-                    <td>R$100,00</td>
-                    <td>R$120,00</td>
-                  </tr>
-                  <tr>
-                    <td>Pé</td>
-                    <td>R$100,00</td>
-                    <td>R$120,00</td>
-                  </tr>
+                  <tr><td>Mão</td><td>R$100,00</td><td>R$120,00</td></tr>
+                  <tr><td>Pé</td><td>R$100,00</td><td>R$120,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
+
       </div>
 
       <!-- ===================== EMBELEZAMENTO FACIAL ===================== -->
       <div class="container catalog__container" id="EmbelezamentoFacial">
-        <!-- CARD PROCEDIMENTOS -->
-        <div class="card-procedures">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide antes"><img src="./assets/img/embele-facial/design-sobrancelha-antes.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/embele-facial/design-sobrancelha-depois.webp" alt=""></div>
 
+        <!-- CARD: Design de Sobrancelha -->
+        <div class="card-procedures">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide antes"><img src="./assets/img/embele-facial/design-sobrancelha-antes.webp" alt="Sobrancelha antes do design no Studio Hair"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/embele-facial/design-sobrancelha-depois.webp" alt="Sobrancelha depois do design no Studio Hair Maringá"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
-            <h3>Sobrancelha</h3>
+            <h3>Design de Sobrancelha</h3>
             <div class="price-table">
               <table>
                 <thead>
@@ -450,40 +358,26 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Remoção</td>
-                    <td>R$40,00</td>
-                    <td>R$55,00</td>
-                  </tr>
-                  <tr>
-                    <td>Lash lifting</td>
-                    <td>R$90,00</td>
-                    <td>R$105,00</td>
-                  </tr>
+                  <tr><td>Remoção</td><td>R$40,00</td><td>R$55,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
 
-        <!-- CARD PROCEDIMENTOS -->
+        <!-- CARD: Lash Lifting -->
         <div class="card-procedures">
-          <!-- Slider main container -->
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="./assets/img/embele-facial/lash-lifiting.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/embele-facial/lash-lifiting.webp" alt="Lash lifting — cílios curvados e alongados no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
-            <h3>Sobrancelha</h3>
+            <h3>Lash Lifting</h3>
             <div class="price-table">
               <table>
                 <thead>
@@ -494,43 +388,30 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Remoção</td>
-                    <td>R$40,00</td>
-                    <td>R$55,00</td>
-                  </tr>
-                  <tr>
-                    <td>Lash lifting</td>
-                    <td>R$90,00</td>
-                    <td>R$105,00</td>
-                  </tr>
+                  <tr><td>Lash lifting</td><td>R$90,00</td><td>R$105,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
+
       </div>
 
       <!-- ===================== ESTETICA FACIAL FUNCIONAL ===================== -->
       <div class="container catalog__container" id="EsteticaFacialFuncional">
-        <!-- CARD PROCEDIMENTOS -->
-        <div class="card-procedures">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide antes"><img src="./assets/img/estetica-facial/limpeza-de-pele.webp" alt=""></div>
-              <div class="swiper-slide depois"><img src="./assets/img/estetica-facial/limpeza-de-pele.webp" alt=""></div>
 
+        <!-- CARD: Limpeza de Pele -->
+        <div class="card-procedures">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide antes"><img src="./assets/img/estetica-facial/limpeza-de-pele.webp" alt="Limpeza de pele profissional no Studio Hair Maringá"></div>
+              <div class="swiper-slide depois"><img src="./assets/img/estetica-facial/limpeza-de-pele.webp" alt="Resultado da limpeza de pele profunda no Studio Hair"></div>
             </div>
-            <!--pagination -->
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
           <div class="card-procedures__content column">
             <h3>Limpeza de Pele</h3>
             <div class="price-table">
@@ -543,22 +424,19 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Simples</td>
-                    <td>R$120,00</td>
-                    <td>R$135,00</td>
-                  </tr>
+                  <tr><td>Simples</td><td>R$120,00</td><td>R$135,00</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <!-- FIM CARD PROCEDIMENTOS -->
+        <!-- FIM CARD -->
+
       </div>
     </section>
 
-    <a class="icon-up" href="#CatalogoHeader">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a class="icon-up" href="#CatalogoHeader" aria-label="Voltar ao topo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <g id="arrow-up">
           <path id="Vector" d="M12 19V5M12 5L5 12M12 5L19 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </g>
@@ -568,7 +446,31 @@
   </main>
 
   <!-- ===================== FOOTER ===================== -->
-
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-content">
+        <a href="index.html"><img src="./assets/svg/logo-escrita.svg" alt="Studio Hair" class="logo-footer"></a>
+        <a href="https://www.instagram.com/valdineiagoncalves777/" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram do Studio Hair">
+          <img src="./assets/svg/InstagramLogo.svg" alt="Instagram">
+        </a>
+      </div>
+      <div class="footer-content">
+        <nav aria-label="Links do rodapé">
+          <ul class="nav-links-footer">
+            <li><a href="index.html#procedimentos">Serviços</a></li>
+            <li><a href="index.html#local">Sobre</a></li>
+            <li><a href="index.html#depoimentos">Depoimentos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+          </ul>
+        </nav>
+        <a href="index.html"><img src="./assets/svg/logo-escrita.svg" alt="Studio Hair" class="logo-footer-mobile"></a>
+        <div class="politica-footer">
+          <span>Todos os direitos reservados © 2026 Studio Hair</span>
+          <span>Desenvolvido por Allux</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./js/app.js" defer></script>
   <script type="module">
